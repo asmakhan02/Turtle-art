@@ -1,0 +1,9 @@
+import turtle
+colors = ['pink', 'purple', 'blue', 'lightblue', 'light pink', 'red','white']
+asma = turtle.Turtle()
+turtle.bgcolor('black')
+for x in range(900):
+    asma.pencolor(colors[x % 7])
+    asma.width(x//50 + 1)
+    asma.forward(x)
+    asma.right(70)
